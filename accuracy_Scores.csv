@@ -1,0 +1,8 @@
+,model,accuracyScore
+0,Logistic Regression,0.89
+1,K Nearest Neighbours,0.93
+2,Support Vector Machine,0.9
+3,Kernel SVM,0.93
+4,Naive Bayes,0.9
+5,Decision Tree,0.91
+6,Random Forest,0.91
