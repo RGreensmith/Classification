@@ -4,7 +4,27 @@ from visualiseResults import visualiseResults
 from predictResults import predictResults
 from plotConfusionMatrix import AccuracyAndConfusion
 def classifier (xTrain, yTrain, xTest, yTest, sc, modelType = ('LR', 'KNN', 'SVM', 'KSVM', 'NB', 'DT', 'RF')):
-    
+    """
+    Creates classifier models
+
+    Args:
+        xTrain (pandas dataframe, required): predictor dataframe for model training
+        yTrain (pandas dataframe, required): dependent variable dataframe for model training
+        xTest  (pandas dataframe, required): predictor dataframe for model testing
+        yTest  (pandas dataframe, required): dependent variable dataframe for model testing
+        sc (StandardScalar object, required): standard scalar object from sklearn.preprocessing
+        modelType (string, optional): classifier models to be created. Defaults to string of all classifiers.
+                                        'LR'    = Logistic Regression
+                                        'KNN'   = K Nearest Neighbours
+                                        'SVM'   = Support Vector Machine
+                                        'KSVM'  = Kernel Support Vector Machine
+                                        'NB'    = Naive Bayes
+                                        'DT'    = Decision Tree
+                                        'RF'    = Random Forest
+
+    Returns:
+        ``: 
+    """
     accuracyScores = [None] * len(modelType)
 
     for m in range(len(modelType)) :
