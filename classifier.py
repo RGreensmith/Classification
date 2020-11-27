@@ -5,7 +5,7 @@ from predictResults import predictResults
 from plotConfusionMatrix import AccuracyAndConfusion
 def classifier (xTrain, yTrain, xTest, yTest, sc, modelType = ('LR', 'KNN', 'SVM', 'KSVM', 'NB', 'DT', 'RF')):
     """
-    Creates classifier models
+    Generates and saves (to directory): classifier models, visualisation plots, accuracy score csv and predicted results csv.
 
     Args:
         xTrain (pandas dataframe, required): predictor dataframe for model training
@@ -23,7 +23,7 @@ def classifier (xTrain, yTrain, xTest, yTest, sc, modelType = ('LR', 'KNN', 'SVM
                                         'RF'    = Random Forest
 
     Returns:
-        ``: 
+        `Void`
     """
     accuracyScores = [None] * len(modelType)
 
