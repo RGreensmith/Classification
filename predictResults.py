@@ -5,7 +5,7 @@ from predictClassifier import predictClassifier
 def predictResults(xTest, yTest, model, modelTypeFull):
 
     """
-    Predicts new data based on x test data, and saves as csv in current directory.
+    Predicts new data (as a wrapper for predictClassifier) based on x test data, and saves as csv in current directory.
 
     Args:
 
