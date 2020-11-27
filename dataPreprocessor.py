@@ -8,8 +8,8 @@ def dataPreprocessor (dataName) :
     Splits the data into x & y training and test, then standardises the data.
 
     Args:
-    
-    String : filename of the dataset (exclude file extension). Must be a csv, and the y variable must be in the last column.
+
+    dataName (string, required) : filename of the dataset (exclude file extension). Must be a csv, and the y variable must be in the last column.
 
     Returns:
         `testTrainScalar`: object with 5 attributes - standardised x training data, standardised x test data, y training data, y test data and scalar
