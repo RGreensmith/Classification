@@ -9,13 +9,13 @@ def predictResults(xTest, yTest, model, modelTypeFull):
 
     Args:
 
-    xTest (pandas dataframe, required): x test data
-    yTest (pandas dataframe, required): y test data
-    model (model object, required): classifier model object of sklearn
-    modelTypeFull (string, required): name of the type of model
+        xTest (pandas dataframe, required): x test data
+        yTest (pandas dataframe, required): y test data
+        model (model object, required): classifier model object of sklearn
+        modelTypeFull (string, required): name of the type of model
 
     Returns:
-    `yPred`: prediction based on x test data
+        `yPred`: prediction based on x test data
     """
 
     yPred = predictClassifier(model, xTest)

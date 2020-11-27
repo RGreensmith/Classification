@@ -10,7 +10,7 @@ def predictClassifier(classifierObj, data):
     data (dataframe, required): new data to make prediction
 
     Returns:
-    `result`: prediction
+        `result`: prediction
     """
 
     print('predict probability')
