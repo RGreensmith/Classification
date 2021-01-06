@@ -1,0 +1,14 @@
+import numpy as np
+arr = np.array([[1,2,3],['x','y','z']])
+
+for a in range(arr.shape[1]):
+    for b in range(arr.shape[0]):
+        print('********** next)
+        print('arr.shape[1] = '+arr.shape[1])
+        print('a = '+a)
+        print('                   ')
+        print('arr.shape[0] = '+arr.shape[0])
+        print('b = '+b)
+        print('                   ')
+        print('arr['+b+','+a+'] = '+arr[b,a])
+        

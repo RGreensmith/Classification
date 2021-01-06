@@ -13,7 +13,6 @@ def predictClassifier(classifierObj, data):
         `result`: prediction
     """
 
-    print('predict probability')
+    
     result = classifierObj.predict(data)
-    print(result)
     return result
