@@ -3,3 +3,5 @@ Seals.csv
 csv_files/*
 models/*
 plots/*
+classifierExplanationImages/*
+Additional_graphs/*
