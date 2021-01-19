@@ -3,7 +3,7 @@ from dataPreprocessor import dataPreprocessor
 from classifier import classifier
 
 # Import dataset and preprocess
-data = dataPreprocessor('Seals.csv')
+data = dataPreprocessor('SealsScaled.csv')
 xTrain = data[0]
 xTest = data[1]
 yTrain = data[2]
