@@ -1,5 +1,6 @@
 Social_Network_Ads.csv
 Seals.csv
+SealsScaled.csv
 csv_files/*
 models/*
 plots/*
