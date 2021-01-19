@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
-def visualiseResults(x, y, testOrTrain, modelTypeFull, model, sc, xLab='Age', yLab='Nitrogen Isotope Value'):
+def visualiseResults(x, y, testOrTrain, modelTypeFull, model, sc, xLab='Age (years)', yLab='Isotopic Nitrogen Value (0/00)'):
 
     """
     Generates and saves plots to visualise results to current directory.
@@ -25,8 +25,8 @@ def visualiseResults(x, y, testOrTrain, modelTypeFull, model, sc, xLab='Age', yL
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
     x_set, y_set = sc.inverse_transform(x), y
-    x1, x2 = np.meshgrid(np.arange(start=x_set[:, 0].min() - 10, stop=x_set[:, 0].max() + 10, step=0.6),
-                         np.arange(start=x_set[:, 1].min() - 1000, stop=x_set[:, 1].max() + 1000, step=0.6))
+    x1, x2 = np.meshgrid(np.arange(start=x_set[:, 0].min(), stop=x_set[:, 0].max(), step=0.05),
+                         np.arange(start=x_set[:, 1].min(), stop=x_set[:, 1].max(), step=0.05))
     
     z = model.predict(sc.transform(np.array([x1.ravel(), x2.ravel()]).T)).reshape(x1.shape)
     z2 = np.full_like(z, np.nan, dtype=np.double)
