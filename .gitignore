@@ -5,3 +5,4 @@ models/*
 plots/*
 classifierExplanationImages/*
 Additional_graphs/*
+__pycache__/*
